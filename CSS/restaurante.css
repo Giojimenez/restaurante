@@ -1,0 +1,237 @@
+
+/*
+Estilo para la interfaz del restaurante
+
+Autor: Giovanny Jimenez Alarcon;
+Fecha: 07/02/2018;
+
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root{
+  --bg-body: #D6D6D6;
+  --bg-azul: #55C5D0;
+  --bg-enEspera : #d9534f;  /* Cambia color del fondo del boton En espera*/
+  --font-btn: #fff; /* Cambia color del texto de los botones*/
+  --font-Ordenando: #000; /* Cambia color del texto del boton ordenando*/
+  --bg-Preparando : #f0ad4e;/* Cambia color del fondo del boton Preparando*/
+  --bg-Preparado:#5bc0de;/* Cambia color del fondo del boton Preparado*/
+  --bg-Entregado:#5cb85c;/* Cambia color del fondo del boton entregado*/
+  --bg-Ordenando:#fff; /* Cambia color del fondo del boton Ordenando*/
+
+}
+
+body{
+  background-color: var(--bg-body);
+}
+
+
+#contenedor{
+  background-color: #FFF;
+  height: 100vh;
+  width: 100vw;
+  min-width: 320px;
+  margin: auto;
+}
+
+/****  FORMULARIO LOGIN*/
+.formLogin {
+  width: 300px;
+  height: 400px;
+  background-color: var(--bg-azul);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 1em 2em;
+  border-bottom: 2px solid #ccc;
+  display: table;
+}
+
+div.content {
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+div.content h3{
+  text-align: center;
+}
+
+#imgLogin{
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+/******* encabezado*************/
+#cont_norte{
+  height: 60px;
+  background-color: var(--bg-azul);
+  color: #FFF;
+  text-align:center;
+  display: flex;
+    align-items: center;
+}
+
+/* Elementos dentro del cont_norte */
+#imagenLogo{
+  height: 90%;
+  padding-top: 3px;
+}
+
+#imagenLogo img{
+  height: 100%;
+}
+
+/*
+#imgLogoChef{
+  width: 100%;
+  height: 90%;
+}
+*/
+
+#divBotonSalir{
+  display:flex;
+    align-items:center; /* vertically aligned! */
+    justify-content: center;
+}
+
+#btnSalir {
+  vertical-align: middle;
+  
+  background-color: #fff;
+}
+
+.glyphicon-off{
+  color: var(--bg-azul);
+}
+
+#cont_norte h1{
+  margin-top: 0;
+  font-size: 15px;
+}
+
+
+/* Fin de elementos dentro del cont_norte */
+
+#cont_centro{
+  width: 95%;
+  height: 70%;
+  background-color: #E6E6E6;
+  margin: auto;
+  margin-top: 2.5%;
+  padding-top:1.5%;
+  overflow: auto;
+  text-align: center;
+}
+
+#cont_pie{
+  width: 95%;
+  margin: auto;
+  padding-top:2%;
+}
+/*Boton dentro de la tabla*/
+.btn-tabla{
+  padding: 3px 5px;
+    font-size: 11px;
+    border-radius: 1px;
+    width: 100px;
+}
+
+/*ventana modal*/
+.modal-body{
+  max-height: 60vh;
+  overflow: auto;
+}
+
+/*** para los checkbox dentro de tablas*/
+.filled-in{
+    border-color: #FF8800;
+    background-color: #FF8800;  
+}
+
+/**/
+input[type=checkbox] {
+     cursor: pointer;
+  }
+
+input[type=checkbox]:after {
+  content: " ";
+  background-color: #FF8800;
+  display: inline-block;
+  visibility: visible;
+ }
+
+ input[type=checkbox]:checked:after {
+   content: "\2714";  /*define la forma de la imagen checked*/
+ }
+
+/************** FORMATO TABLAS *************************************/
+.tituloTabla{
+  color: var(--bg-azul);
+    font-size: 16px;
+    font-weight: bold;  
+}
+
+th {
+    background-color: var(--bg-azul);
+    color: white;
+}
+
+tr,th{
+  text-align: center;
+}
+
+.btn-EnEspera{
+ background-color: var(--bg-enEspera);
+ color : var(--font-btn);
+}
+
+.btn-Preparando{
+ background-color: var(--bg-Preparando);
+ color: var(--font-btn);
+}
+
+.btn-Preparado{
+ background-color: var(--bg-Preparado);
+ color: var(--font-btn);
+}
+
+.btn-Entregado{
+  background-color: var(--bg-Entregado);
+  color: var(--font-btn);
+}
+
+.btn-Ordenando{
+  background-color: var(--bg-Ordenando);
+  color: var(--font-Ordenando);
+}
+
+
+/*******************************************************/
+
+.alinearMedio{
+  /*display: flex;*/
+    align-items: center;
+}
+
+  @media screen and (max-width: 700px){
+    #logoModulo h1, #logoNombre h1{
+          font-size: 15px;
+          font-weight: bold;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    
+  }
